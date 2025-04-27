@@ -1,15 +1,15 @@
 context:
   name: eyed3
-  version: "0.9.7"
-  python_min: 3.9
+  version: "0.9.8"
+  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/eyeD3-${{ version }}.tar.gz
-  sha256: 93b18e9393376a45114f9409d7cca119fb6f4f9a37d4b697b500af48b4c5cf0f
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: a296ef47d8d5a5b5d7b518c113e650c7db6e47633b31a9ca81453cd48faf9803
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ tests:
       - eyed3 --version
   - python:
       imports:
-      - eyed3
+        - eyed3
       pip_check: true
       python_version: ${{ python_min }}
 
