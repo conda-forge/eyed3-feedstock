@@ -1,6 +1,6 @@
 context:
   name: eyed3
-  version: "0.9.8"
+  version: "0.9.9"
   python_min: '3.9'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a296ef47d8d5a5b5d7b518c113e650c7db6e47633b31a9ca81453cd48faf9803
+  sha256: a8affaae19384aca66f6efef3babd705042a76e546f08e886f5f28691ac62a3b
 
 build:
   noarch: python
